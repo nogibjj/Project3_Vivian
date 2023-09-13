@@ -1,26 +1,28 @@
-import pandas as pd
 import matplotlib.pyplot as plt
+import polars as pl
+import pandas as pd
 
 def f():
-    df=pd.read_csv("california_housing_train.csv")
+    df = pl.read_csv("california_housing_train.csv")
 
     print(df.shape)
-    print(df.shape[0])
+    print(len(df))
     print(df.describe())
 
     # Bottom 3 house price
-    sorted_by_value=df.sort_values('median_house_value', ascending = True)[:3]
+    sorted_by_value = df.sort("median_house_value").limit(3)
     # Calculate the median/mean/standard deviation for the 2022 numbers
-    median=df['median_house_value'].dropna().median()
-    mean=df['median_house_value'].dropna().mean()
-    sd=df['median_house_value'].dropna().std()
-    print("Bottom 3 house price: "+str(sorted_by_value))
-    print("median is: "+ str(median))
-    print("mean is: "+str(mean))
-    print("standard deviation is: "+str(sd))
+    median = df.select("median_house_value").drop_nulls().median()
+    mean = df.select("median_house_value").drop_nulls().mean()
+    sd = df.select("median_house_value").drop_nulls().std()
+    print("Bottom 3 house price:")
+    print(sorted_by_value)
+    print("median is: " + str(median))
+    print("mean is: " + str(mean))
+    print("standard deviation is: " + str(sd))
 
     # Plot a histogram for the house value
-    data = df['median_house_value'].dropna()
+    data = pd.read_csv("california_housing_train.csv")['median_house_value'].dropna()
 
     # Create histogram
     plt.hist(data, bins=5, edgecolor="k")
@@ -35,3 +37,4 @@ def f():
 
 if __name__ == "__main__":
     f()
+
