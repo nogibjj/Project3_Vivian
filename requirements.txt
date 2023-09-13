@@ -16,5 +16,5 @@ numpy
 seaborn
 matplotlib
 pandas
-
+polars
 
