@@ -14,7 +14,9 @@ ouput: all 3 bottom prices are 14999.0
 3. Calculate the median/mean/standard deviation for the 2022 numbers
 
 <img width="324" alt="Screen Shot 2023-09-13 at 10 00 16 AM" src="https://github.com/vivianzzzzz/Template/assets/143654445/d1749b51-8201-4d5c-86a5-dce3ec8188ab">
+
 output: 
+
 median is: 180400.0
 
 mean is: 207300.912353
