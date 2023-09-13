@@ -17,11 +17,11 @@ The purpose of the project is to use the polars to help with anaylizing datasets
 1. make format
 2. make lint
 
-<img width="517" alt="Screen Shot 2023-09-10 at 5 07 55 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/8a359c49-89c8-4395-aad2-6aee8015285e">
+<img width="605" alt="Screen Shot 2023-09-13 at 2 06 28 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/aa0a8eb5-2e16-4d0e-8b05-759e58806d46">
 
 4. make test
 
- <img width="835" alt="Screen Shot 2023-09-10 at 5 07 33 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/04797dc5-4aa1-40a3-9ca9-2eecb3344ce4">
+<img width="851" alt="Screen Shot 2023-09-13 at 2 06 02 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/80ba1741-f3e1-48bc-bb32-a564ab950e06">
 
 
 ## summary statistics
